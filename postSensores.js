@@ -4,12 +4,12 @@
  * @apiName PostEsteira
  * @apiGroup PostEsteira
  * 
- * @apiParam {Number} ID indentificador único para uma esteira
- * @apiParam {Object} kit Objeto kit de sensores a ser cadastrado
- * @apiSuccess {Object} esteira Objeto Esteira com os sensores que já tinham mais os adicionados
+ * @apiParam {Number} idE indentificador único para uma esteira.
+ * @apiParam {Object} kit Objeto kit de sensores a ser cadastrado.
+ * @apiSuccess {Object} esteira Objeto Esteira com os sensores que já tinham mais os adicionados.
  * 
  * @apiParamExample {json} Exemplo de request:
- * HTTP/1.1 405 OK
+ * HTTP/1.1 401 Created
  * {
  *  "sensor0"
  *  {
