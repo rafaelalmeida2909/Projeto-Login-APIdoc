@@ -1,5 +1,5 @@
  /**
- * @api {post} /cadastro/sensores/:esteira/:kit Cadastra um kit de sensores em uma esteira.
+ * @api {post} /cadastro/sensores/:id/:kit Cadastra um kit de sensores em uma esteira.
  * 
  * @apiName PostEsteira
  * @apiGroup PostEsteira
@@ -70,12 +70,12 @@
  * }
  * 
  *
- * @apiError Cadastro_Invalido Os atributos inseridos inválidos.
+ * @apiError CadastroInvalido Os atributos inseridos são inválidos.
  *
  *
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *  "erro": "Cadastro_Invalido, atributos inválidos ou ID inválido.",
+ *  "erro": "CadastroInvalido",
  * }
  */
