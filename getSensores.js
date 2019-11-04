@@ -2,7 +2,7 @@
  * @api {get} /esteiras/:id/sensores Devolve uma lista de sensores cadastrados em uma esteira.
  * @apiName GetSensores
  * @apiGroup GetSensores
- * @apiParam {Number} id Identificador numérico único para uma esteira.
+ * @apiParam {Number} idE Identificador numérico único para uma esteira.
  * @apiSuccess {Array} sensores Devolve um array com todos os ids dos sensores.
  * 
  * @apiSuccessExample Exemplo de Sucesso:

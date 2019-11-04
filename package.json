@@ -1,7 +1,7 @@
 {
   "name": "apidoc",
   "version": "1.0.0",
-  "description": "documento da API",
+  "description": "Documento da API",
   "main": "index.js",
   "scripts": {
     "test": "node index.js"

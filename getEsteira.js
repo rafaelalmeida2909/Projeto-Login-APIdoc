@@ -2,7 +2,7 @@
  * @api {get} /esteiras/:id Devolve informações a respeito de um esteira.
  * @apiName GetEsteira
  * @apiGroup GetEsteira
- * @apiParam {Number} id Identificador numérico único para uma esteira.
+ * @apiParam {Number} idE Identificador numérico único para uma esteira.
  * @apiSuccess {Number} temperatura Temperatura da esteira em ºC.
  * @apiSuccess {Number} umidade Umidade da esteira.
  * @apiSuccess {Number} distancia Distância percorrida pela esteira em metros.
