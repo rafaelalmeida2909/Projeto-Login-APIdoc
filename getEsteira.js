@@ -13,10 +13,10 @@
  * {
  *  "temperatura":100,
  *  "umidade": 0.5,
- *  "distancia": 2200,
+ *  "distancia": 2200
  * }
  *
- * @apiError ExcecaoEsteiraNaoExiste Não foi nenhum cadastro de esteira com o Id solicitado.
+ * @apiError ExcecaoEsteiraNaoExiste Não foi feito nenhum cadastro de esteira com o Id solicitado.
  *
  *
  * @apiErrorExample Exemplo de Erro:
