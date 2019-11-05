@@ -4,7 +4,8 @@
   "description": "Documento da API",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "install": "apidoc -i ./ -o ../documentacao/; echo Pasta documentacao criada no diretório pai ;"
   },
   "apidoc": {
     "title": "Documento API",
