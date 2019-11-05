@@ -1,5 +1,5 @@
  /**
- * @api {post} /cadastro/sensores/:id/:kit Cadastra um kit de sensores em uma esteira.
+ * @api {post} /cadastro/sensores/:idE/:kit Cadastra um kit de sensores em uma esteira.
  * 
  * @apiName PostEsteira
  * @apiGroup PostEsteira
