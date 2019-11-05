@@ -1,8 +1,8 @@
  /**
  * @api {post} /cadastro/sensores/:id/:kit Cadastra um kit de sensores em uma esteira.
  * 
- * @apiName PostEsteira
- * @apiGroup PostEsteira
+ * @apiName PostSensores
+ * @apiGroup PostSensores
  * 
  * @apiParam {Number} idE indentificador único para uma esteira.
  * @apiParam {Object} kit Objeto kit de sensores a ser cadastrado.
