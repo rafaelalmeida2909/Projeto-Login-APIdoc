@@ -11,19 +11,19 @@
  * @apiParamExample {json} Exemplo de request:
  * HTTP/1.1 401 Created
  * {
- *  "sensor0"
+ *  "sensor0":
  *  {
  *      nome: "sensorLuz",
  *      local: "A",
  *      tipo: "optico"
  *  },
- *  "sensor1"
+ *  "sensor1":
  *  {
  *      nome: "sensorUmidade",
  *      local: "A",
  *      tipo: "umidade"
  *  },
- *  "sensor2"
+ *  "sensor2":
  *  {
  *      nome: "sensorOptico",
  *      local: "C",
@@ -35,30 +35,30 @@
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
- *  esteira
+ *  "esteira":
  *  {
- *      idE:0001,
- *      sensores
+ *      "idE":0001,
+ *      "sensores":
  *      {
- *          "sensor0"
+ *          "sensor0":
  *          {
- *              nome: "nome",
- *              local: "local",
- *              tipo: "tipo"
+ *              "nome": "nome",
+ *              "local": "local",
+ *              "tipo": "tipo"
  *          },
- *          "sensor1"
+ *          "sensor1":
  *          {
- *              nome: "sensorLuz",
- *              local: "A",
- *              tipo: "optico"
+ *              "nome": "sensorLuz",
+ *              "local": "A",
+ *              "tipo": "optico"
  *          },
- *          "sensor2"
+ *          "sensor2":
  *          {
  *              nome: "sensorUmidade",
  *              local: "A",
  *              tipo: "umidade"
  *          },
- *          "sensor3"
+ *          "sensor3":
  *          {
  *              nome: "sensorOptico",
  *              local: "C",
