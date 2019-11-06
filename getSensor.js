@@ -1,9 +1,9 @@
  /**
- * @api {get} /esteiras/:id/sensores/:id Devolve informações a respeito de um sensor.
+ * @api {get} /Esteiras/:idEsteira/Sensores/:idSensor Devolve informações a respeito de um sensor.
  * @apiName GetSensor
  * @apiGroup GetSensor
- * @apiParam {Number} idE Identificador numérico único para uma esteira.
- * @apiParam {Number} idS Identificador numérico único para uma sensor.
+ * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
+ * @apiParam {Number} idSensor Identificador numérico único para uma sensor.
  * @apiSuccess {Bollean} ativo Ativo, se o sensor está ativo.
  * @apiSuccess {String}  qr QR code do sensor. 
  * @apiSuccess {String} nome Nome do sensor
