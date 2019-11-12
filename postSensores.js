@@ -13,21 +13,21 @@
  * {
  *  "sensor0":
  *  {
- *      nome: "sensorLuz",
- *      local: "A",
- *      tipo: "optico"
+ *      "nome": "sensorLuz",
+ *      "local": "A",
+ *      "tipo": "optico"
  *  },
  *  "sensor1":
  *  {
- *      nome: "sensorUmidade",
- *      local: "A",
- *      tipo: "umidade"
+ *      "nome": "sensorUmidade",
+ *      "local": "A",
+ *      "tipo": "umidade"
  *  },
  *  "sensor2":
  *  {
- *      nome: "sensorOptico",
- *      local: "C",
- *      tipo: "optico"
+ *      "nome": "sensorOptico",
+ *      "local": "C",
+ *      "tipo": "optico"
  *  }
  *      
  * }
@@ -54,15 +54,15 @@
  *          },
  *          "sensor2":
  *          {
- *              nome: "sensorUmidade",
- *              local: "A",
- *              tipo: "umidade"
+ *              "nome": "sensorUmidade",
+ *              "local": "A",
+ *              "tipo": "umidade"
  *          },
  *          "sensor3":
  *          {
- *              nome: "sensorOptico",
- *              local: "C",
- *              tipo: "optico"
+ *              "nome": "sensorOptico",
+ *              "local": "C",
+ *              "tipo": "optico"
  *          }
  *      }
  *      
