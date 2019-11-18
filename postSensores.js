@@ -1,33 +1,35 @@
  /**
- * @api {post} /Cadastro/Sensor/ Cadastra um kit de sensores em uma esteira.
+ * @api {post} /Esteiras/:idEsteira/Sensores/ Cadastra um kit de sensores em uma esteira.
  * 
- * @apiName PostEsteira
- * @apiGroup PostEsteira
+ * @apiName PostSensor
+ * @apiGroup PostSensor
  * 
  * @apiParam {Number} idEsteira indentificador único para uma esteira.
- * @apiParam {Object} kit Objeto kit de sensores a ser cadastrado.
+ * @apiParam {Object} kit kit de sensores a ser cadastrado.
  * @apiSuccess {Object} esteira Objeto Esteira com os sensores que já tinham mais os adicionados.
  * 
  * @apiParamExample {json} Exemplo de request:
  * HTTP/1.1 401 Created
  * {
- *  "sensor0":
- *  {
- *      "nome": "sensorLuz",
- *      "local": "A",
- *      "tipo": "optico"
+ *  "idEsteira" : 0001,
+ *  "sensor1": {
+ *      "ativo": True,
+ *      "qr": null,
+ *      "nome": "SensorDeUmidade",
+ *      "tipo": "umidade",
+ *      "info": {
+ *          "umidade" = null
+ *      }
  *  },
- *  "sensor1":
- *  {
- *      "nome": "sensorUmidade",
- *      "local": "A",
- *      "tipo": "umidade"
- *  },
- *  "sensor2":
- *  {
- *      "nome": "sensorOptico",
- *      "local": "C",
- *      "tipo": "optico"
+ *  "sensor2": {
+ *      "ativo": True,
+ *      "qr": null,
+ *      "nome": "SensorÓptico",
+ *      "tipo": "óptico",
+ *      "info": {
+ *          "distancia" = null,
+ *          "contagem" = null
+ *      }
  *  }
  *      
  * }
@@ -35,37 +37,37 @@
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
- *  "esteira":
- *  {
- *      "idE":0001,
- *      "sensores":
- *      {
- *          "sensor0":
- *          {
- *              "nome": "nome",
- *              "local": "local",
- *              "tipo": "tipo"
+ *  "esteira": {
+ *      "idE": 0001,
+ *      "sensores": {
+ *          "sensor0": {
+ *              "ativo": True,
+ *              "qr": null,
+ *              "nome": "SensorDeTemperatura",
+ *              "tipo": "térmico",
+ *              "info": {
+ *                  "temperatura" = 80
+ *              }
  *          },
- *          "sensor1":
- *          {
- *              "nome": "sensorLuz",
- *              "local": "A",
- *              "tipo": "optico"
+ *          "sensor1": {
+ *              "ativo": True,
+ *              "qr": null,
+ *              "nome": "SensorDeUmidade",
+ *              "tipo": "umidade",
+ *              "info": {
+ *                  "umidade" = 30
+ *              }
  *          },
- *          "sensor2":
- *          {
- *              "nome": "sensorUmidade",
- *              "local": "A",
- *              "tipo": "umidade"
- *          },
- *          "sensor3":
- *          {
- *              "nome": "sensorOptico",
- *              "local": "C",
- *              "tipo": "optico"
+ *          "sensor2": {
+ *              "ativo": True,
+ *              "qr": null,
+ *              "nome": "SensorÓptico",
+ *              "tipo": "óptico",
+ *              "info": {
+ *                  "distancia" = 20,
+ *                  "contagem" = 0
+ *              }
  *          }
- *      }
- *      
  *  }
  * }
  * 

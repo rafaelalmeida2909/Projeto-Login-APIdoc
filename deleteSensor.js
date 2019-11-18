@@ -1,13 +1,16 @@
 /**
- * @api {delete} /Excluir/Sensor/:idSensor Exclui um sensor de uma esteira em produção.
+ * @api {delete} /Esteiras/:idEsteira/Sensores/:idSensor Exclui um sensor de uma esteira em produção.
  * @apiName DeleteSensor
  * @apiGroup DeleteSensor
+ * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * @apiParam {Number} idSensor Identificador numérico único para um sensor.
- * @apiSuccess {String} idExcluido Devolve um string com o id do sensor excluído.
+ * @apiSuccess {String} mensagem Devolve um string com a mensagem de sucesso.
+ * @apiSuccess {Number} idExcluido Devolve um string com o id do sensor excluído.
  * 
  * @apiSuccessExample Exemplo de Sucesso:
  *     HTTP/1.1 200 OK
  *     {
+ *       "mensagem": "Sensor excluído com sucesso."
  *       "idExcluido" = "S10000" 
  *     }
  *

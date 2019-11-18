@@ -1,21 +1,43 @@
  /**
- * @api {get} /Esteiras/:id Devolve informações a respeito de um esteira.
+ * @api {get} /Esteiras/:idEsteira Devolve informações a respeito de um esteira.
  * @apiName GetEsteira
  * @apiGroup GetEsteira
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
- * @apiSuccess {Number} temperatura Temperatura da esteira em ºC.
- * @apiSuccess {Number} umidade Umidade da esteira.
- * @apiSuccess {Number} distancia Distância percorrida pela esteira em metros.
- * @apiSuccess {Array} idsSensores Array com identificadores dos sensores associados a esteira.
+ * @apiSuccess {Object} sensores Obejto com todos os sensores atribuídos a uma esteira e suas respectivas informações.
  *
- * @apiSuccessExample Exemplo de Sucesso:
- *
+ * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
- *  "temperatura":100,
- *  "umidade": 0.5,
- *  "distancia": 2200,
- *  "idsSensores": ["S10000","S10001"],
+ *      "sensores": {
+ *          "S0000" {
+ *              "ativo": True,
+ *              "qr": null,
+ *              "nome": "SensorDeTemperatura",
+ *              "tipo": "térmico",
+ *              "info": {
+ *                  "temperatura" = 80
+ *              }
+ *          },
+ *          "S0001": {
+ *              "ativo": True,
+ *              "qr": null,
+ *              "nome": "SensorDeUmidade",
+ *              "tipo": "umidade",
+ *              "info": {
+ *                  "umidade" = 30
+ *              }
+ *          },
+ *          "S0002": {
+ *              "ativo": True,
+ *              "qr": null,
+ *              "nome": "SensorÓptico",
+ *              "tipo": "óptico",
+ *              "info": {
+ *                  "distancia" = 20,
+ *                  "contagem" = 5
+ *              }
+ *          }
+ *      }
  * }
  *
  * @apiError ExcecaoEsteiraNaoExiste Não foi feito nenhum cadastro de esteira com o Id solicitado.

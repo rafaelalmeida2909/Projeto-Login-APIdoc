@@ -1,14 +1,16 @@
 /**
- * @api {delete} /Excluir/Esteira/:idEsteira Exclui uma esteira em produção.
- * @apiName ExcluirEsteira
- * @apiGroup ExcluirEsteira
+ * @api {delete} /Esteiras/:idEsteira Exclui uma esteira em produção.
+ * @apiName DeleteEsteira
+ * @apiGroup DeleteEsteira
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
- * @apiSuccess {String} idExcluido Devolve um string com o id da esteira excluída.
+ * @apiSuccess {String} mensagem Devolve um string com a mensagem de sucesso.
+ * @apiSuccess {Number} idExcluido Devolve um string com o id da esteira excluída.
  * 
  * @apiSuccessExample Exemplo de Sucesso:
  *     HTTP/1.1 200 OK
  *     {
- *       "idExcluido" = "E10000" 
+ *       "mensagem": "Esteira excluída com sucesso."
+ *       "idExcluido" = "E10001" 
  *     }
  *
  * @apiError ExcecaoEsteiraNaoEncontrada A esteira com o id desejado, não foi encontrada.

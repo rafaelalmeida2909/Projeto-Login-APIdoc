@@ -7,9 +7,8 @@
  * @apiSuccess {Bollean} ativo Ativo, se o sensor está ativo.
  * @apiSuccess {String}  qr QR code do sensor. 
  * @apiSuccess {String} nome Nome do sensor
- * @apiSuccess {String} local Local do sensor.
  * @apiSuccess {String} tipo Tipo de sensor.
- * @apiSuccess {Number} temperatura Temperatura em ºC.
+ * @apiSuccess {object} info Informações coletadas pelo sensor genérico.
  * 
  * @apiSuccessExample Exemplo de Sucesso:
  *     HTTP/1.1 200 OK
@@ -17,9 +16,10 @@
  *        "ativo": True,
  *        "qr": null,
  *        "nome": "SensorDeTemperatura",
- *        "local": null,
- *        "tipo": "Temperatura",
- *        "temperatura": 80
+ *        "tipo": "Térmico",
+ *        "info": {
+ *              "temperatura" = 80
+ *         }
  *     }
  * 
  * @apiError ExcecaoSensorNaoEncontrado O sensor deste id não foi encontrado.
