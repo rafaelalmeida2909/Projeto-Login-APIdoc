@@ -1,40 +1,49 @@
  /**
  * @api {get} /Esteiras/:idEsteira Devolve informações a respeito de um esteira.
+ * 
  * @apiName GetEsteira
  * @apiGroup GetEsteira
+ * 
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
+ * 
+ * @apiSuccess {Number} idEsteira Identificador numérico único da uma esteira.
+ * @apiSuccess {String} alias  Nome amigável da esteira.
+ * @apiSuccess {Boolean} ativo True se a esteira está ativa, false, caso contrário.
  * @apiSuccess {Object} sensores Obejto com todos os sensores atribuídos a uma esteira e suas respectivas informações.
  *
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
+ *      "idEsteira": 10005,
+ *      "alias": "EsteiraDeMontagem",
+ *      "ativa": false,
  *      "sensores": {
- *          "S0000" {
- *              "ativo": True,
+ *          "10000": {
+ *              "ativo": true,
  *              "qr": null,
- *              "nome": "SensorDeTemperatura",
+ *              "alias": "SensorDeTemperatura",
  *              "tipo": "térmico",
  *              "info": {
- *                  "temperatura" = 80
+ *                  "temperatura": 80
  *              }
  *          },
- *          "S0001": {
- *              "ativo": True,
+ *          "10001": {
+ *              "ativo": true,
  *              "qr": null,
- *              "nome": "SensorDeUmidade",
+ *              "alias": "SensorDeUmidade",
  *              "tipo": "umidade",
  *              "info": {
- *                  "umidade" = 30
+ *                  "umidade": 30
  *              }
  *          },
- *          "S0002": {
- *              "ativo": True,
+ *          "10002": {
+ *              "ativo": true,
  *              "qr": null,
- *              "nome": "SensorÓptico",
+ *              "alias": "SensorÓptico",
  *              "tipo": "óptico",
  *              "info": {
- *                  "distancia" = 20,
- *                  "contagem" = 5
+ *                  "distancia": 20,
+ *                  "contagem": 5
  *              }
  *          }
  *      }
@@ -46,6 +55,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *  "erro": "ExcecaoEsteiraNaoExiste",
+ *  "erro": "ExcecaoEsteiraNaoExiste"
  * }
  */

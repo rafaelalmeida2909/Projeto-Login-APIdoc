@@ -1,74 +1,75 @@
  /**
- * @api {post} /Esteiras/:idEsteira/Sensores/ Cadastra um kit de sensores em uma esteira.
+ * @api {post} /Esteiras/:idEsteira/Sensores/ Cadastra um kit, ou apenas um único sensor em uma esteira.
  * 
  * @apiName PostSensor
  * @apiGroup PostSensor
  * 
- * @apiParam {Number} idEsteira indentificador único para uma esteira.
- * @apiParam {Object} kit kit de sensores a ser cadastrado.
- * @apiSuccess {Object} esteira Objeto Esteira com os sensores que já tinham mais os adicionados.
+ * @apiParam {Number} idEsteira Identificador único para uma esteira.
+ * @apiParam {Object} sensores Sensores para cadastrado.
+ * 
+ * @apiSuccess {Object} sensores Objeto com os sensores que haviam na esteira, mais os adicionados.
  * 
  * @apiParamExample {json} Exemplo de request:
  * HTTP/1.1 401 Created
  * {
- *  "idEsteira" : 0001,
- *  "sensor1": {
- *      "ativo": True,
- *      "qr": null,
- *      "nome": "SensorDeUmidade",
- *      "tipo": "umidade",
- *      "info": {
- *          "umidade" = null
+ *      "idEsteira": 10001,
+ *      "sensores": {
+ *          "sensor1": {
+ *              "ativo": false,
+ *              "qr": null,
+ *              "alias": "SensorDeUmidade",
+ *              "tipo": "umidade",
+ *              "info": {
+ *                  "umidade": null
+ *              }
+ *          },
+ *          "sensor2": {
+ *              "ativo": true,
+ *              "qr": null,
+ *              "alias": "SensorÓptico",
+ *              "tipo": "óptico",
+ *              "info": {
+ *                  "distancia": null,
+ *                  "contagem": null
+ *              }
+ *          }
  *      }
- *  },
- *  "sensor2": {
- *      "ativo": True,
- *      "qr": null,
- *      "nome": "SensorÓptico",
- *      "tipo": "óptico",
- *      "info": {
- *          "distancia" = null,
- *          "contagem" = null
- *      }
- *  }
- *      
- * }
+ * }    
  * 
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
- *  "esteira": {
- *      "idE": 0001,
- *      "sensores": {
- *          "sensor0": {
- *              "ativo": True,
+
+ *      "Sensores": {
+ *          "10001": {
+ *              "ativo": true,
  *              "qr": null,
- *              "nome": "SensorDeTemperatura",
+ *              "alias": "SensorDeTemperatura",
  *              "tipo": "térmico",
  *              "info": {
- *                  "temperatura" = 80
+ *                  "temperatura": 80
  *              }
  *          },
- *          "sensor1": {
- *              "ativo": True,
+ *          "10002": {
+ *              "ativo": false,
  *              "qr": null,
- *              "nome": "SensorDeUmidade",
+ *              "alias": "SensorDeUmidade",
  *              "tipo": "umidade",
  *              "info": {
- *                  "umidade" = 30
+ *                  "umidade": null
  *              }
  *          },
- *          "sensor2": {
- *              "ativo": True,
+ *          "10003": {
+ *              "ativo": true,
  *              "qr": null,
- *              "nome": "SensorÓptico",
+ *              "alias": "SensorÓptico",
  *              "tipo": "óptico",
  *              "info": {
- *                  "distancia" = 20,
- *                  "contagem" = 0
+ *                  "distancia": 20,
+ *                  "contagem": 0
  *              }
  *          }
- *  }
+ *      }
  * }
  * 
  *
@@ -78,6 +79,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *  "erro": "CadastroInvalido",
+ *      "erro": "CadastroInvalido"
  * }
  */
