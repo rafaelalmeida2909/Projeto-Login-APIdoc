@@ -13,9 +13,9 @@
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
- *      "mensagem": "Esteira excluída com sucesso.",
- *      "idExcluído": 10001,
- *      "aliasExcluído": "EsteiraSetorB" 
+ *		"mensagem": "Esteira excluída com sucesso.",
+ *		"idExcluído": 10001,
+ *		"aliasExcluído": "EsteiraSetorB" 
  * }
  *
  * @apiError ExcecaoEsteiraNaoEncontrada A esteira com o id desejado, não foi encontrada.
@@ -23,6 +23,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *      "erro": "ExcecaoEsteiraNaoEncontrada"
+ *		"erro": "ExcecaoEsteiraNaoEncontrada"
  * }
  */

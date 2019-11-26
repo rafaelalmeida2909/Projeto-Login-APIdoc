@@ -15,17 +15,17 @@
  * @apiParamExample {json} Exemplo de request:
  * HTTP/1.1 201 Created
  * {
- *      "alias": "EsteiraDeCorte",
- *      "ativa": true,
- *      "velocidade": 2
+ *		"alias": "EsteiraDeCorte",
+ *		"ativa": true,
+ *		"velocidade": 2
  * }
  * 
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {    
- *      "mensagem": "Esteira cadastrada com sucesso.",
- *      "idEsteira": 10001,
- *      "ativa": true
+ *		"mensagem": "Esteira cadastrada com sucesso.",
+ *		"idEsteira": 10001,
+ *		"ativa": true
  * }
  * 
  * @apiError CadastroInvalido Não foi possível criar uma esteira.
@@ -33,6 +33,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *      "erro": "CadastroInvalido"
+ *		"erro": "CadastroInvalido"
  * }
  */

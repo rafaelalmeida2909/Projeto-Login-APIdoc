@@ -16,14 +16,14 @@
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
- *      "idSensor": 10004,
- *      "ativo": true,
- *      "qr": null,
- *      "alias": "SensorDeTemperatura",
- *      "tipo": "Térmico",
- *      "info": {
- *          "temperatura": 80
- *      }
+ *		"idSensor": 10004,
+ *		"ativo": true,
+ *		"qr": null,
+ *		"alias": "SensorDeTemperatura",
+ *		"tipo": "Térmico",
+ *		"info": {
+ *			"temperatura": 80
+ *		}
  * }
  * 
  * @apiError ExcecaoSensorNaoEncontrado O sensor deste id não foi encontrado.
@@ -31,6 +31,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *      "erro": "ExcecaoSensorNaoEncontrado"
+ *		"erro": "ExcecaoSensorNaoEncontrado"
  * }
  */

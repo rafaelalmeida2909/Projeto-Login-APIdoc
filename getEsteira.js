@@ -15,40 +15,40 @@
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
- *      "idEsteira": 10005,
- *      "alias": "EsteiraDeMontagem",
- *      "ativa": false,
- *      "velocidade": 3
- *      "sensores": {
- *          "10000": {
- *              "ativo": true,
- *              "qr": null,
- *              "alias": "SensorDeTemperatura",
- *              "tipo": "térmico",
- *              "info": {
- *                  "temperatura": 80
- *              }
- *          },
- *          "10001": {
- *              "ativo": true,
- *              "qr": null,
- *              "alias": "SensorDeUmidade",
- *              "tipo": "umidade",
- *              "info": {
- *                  "umidade": 30
- *              }
- *          },
- *          "10002": {
- *              "ativo": true,
- *              "qr": null,
- *              "alias": "SensorÓptico",
- *              "tipo": "óptico",
- *              "info": {
- *                  "distancia": 20,
- *                  "contagem": 5
- *              }
- *          }
- *      }
+ *		"idEsteira": 10005,
+ *		"alias": "EsteiraDeMontagem",
+ *		"ativa": false,
+ *		"velocidade": 3
+ *		"sensores": {
+ *			"10000": {
+ *				"ativo": true,
+ *				"qr": null,
+ *				"alias": "SensorDeTemperatura",
+ *				"tipo": "térmico",
+ *				"info": {
+ *					"temperatura": 80
+ *				}
+ *		},
+ *			"10001": {
+ *				"ativo": true,
+ * 				"qr": null,
+ * 				"alias": "SensorDeUmidade",
+ * 				"tipo": "umidade",
+ * 				"info": {
+ *					"umidade": 30
+ *				}
+ *		},
+ *			"10002": {
+ *				"ativo": true,
+ *				"qr": null,
+ *				"alias": "SensorÓptico",
+ *				"tipo": "óptico",
+ *				"info": {
+ *					"distancia": 20,
+ *					"contagem": 5
+ *				}
+ *			}
+ *		}
  * }
  *
  * @apiError ExcecaoEsteiraNaoExiste Não foi feito nenhum cadastro de esteira com o Id solicitado.
@@ -57,6 +57,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *  "erro": "ExcecaoEsteiraNaoExiste"
+ *		"erro": "ExcecaoEsteiraNaoExiste"
  * }
  */

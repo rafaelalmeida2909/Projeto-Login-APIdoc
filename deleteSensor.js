@@ -14,9 +14,9 @@
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
- *      "mensagem": "Sensor excluído com sucesso.",
- *      "idExcluido": 10000, 
- *      "aliasExcluído": "SensorDeTemperatura" 
+ *		"mensagem": "Sensor excluído com sucesso.",
+ *		"idExcluido": 10000, 
+ *		"aliasExcluído": "SensorDeTemperatura" 
  * }
  *
  * @apiError ExcecaoSensorNaoEncontrado O sensor com o id desejado, não foi encontrado.
@@ -24,6 +24,6 @@
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *      "erro": "ExcecaoSensorNaoEncontrado"
+ *		"erro": "ExcecaoSensorNaoEncontrado"
  * }
  */
