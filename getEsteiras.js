@@ -10,7 +10,7 @@
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
- *      "esteiras": ["10000","10001","10002"],
+ *      "esteiras": [10000,10001,10002],
  *      "aliases": ["EsteiraSetorNorte", "EsteiraEmpacotamento", "EsteiraMontagem"]
  * }
  *

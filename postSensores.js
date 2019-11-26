@@ -10,7 +10,7 @@
  * @apiSuccess {Object} sensores Objeto com os sensores que haviam na esteira, mais os adicionados.
  * 
  * @apiParamExample {json} Exemplo de request:
- * HTTP/1.1 401 Created
+ * HTTP/1.1 201 Created
  * {
  *      "idEsteira": 10001,
  *      "sensores": {
@@ -39,7 +39,6 @@
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
  * {
-
  *      "Sensores": {
  *          "10001": {
  *              "ativo": true,

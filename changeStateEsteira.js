@@ -14,14 +14,14 @@
  * HTTP/1.1 200 OK
  * {
  *      "idEsteira": 10007,
- *      "ativa": true
+ *      "ativa": false
  * }
  * 
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
  *      "mensagem": "Estado da esteira atualizado",
- *      "ativa": true
+ *      "ativa": false
  * }
  *
  * @apiError MudançaFalhou A atualização da esteira falhou.
