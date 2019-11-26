@@ -1,8 +1,9 @@
 /**
- * @api {patch} /Esteiras/:idEsteira/Sensores/:idSensor Modifica qualquer atributo de um sensor, salvando as alterações no banco de dados.
+ * @api {patch} /Esteiras/:idEsteira/Sensores/:idSensor EditSensor
  * 
  * @apiName EditSensor
- * @apiGroup EditSensor
+ * @apiGroup Sensor
+ * @apiDescription Modifica qualquer atributo de um sensor, salvando as alterações no banco de dados.
  * 
  * @apiParam {Number} idEsteira Identificador numérico único para a esteira do sensor.
  * @apiParam {Number} idSensor Identificador numérico único para um sensor.

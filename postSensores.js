@@ -1,9 +1,10 @@
  /**
- * @api {post} /Esteiras/:idEsteira/Sensores/ Cadastra um kit, ou apenas um único sensor em uma esteira.
+ * @api {post} /Esteiras/:idEsteira/Sensores/ PostSensor
  * 
  * @apiName PostSensor
- * @apiGroup PostSensor
- * 
+ * @apiGroup Sensor
+ * @apiDescription Cadastra um kit, ou apenas um único sensor em uma esteira.
+ *
  * @apiParam {Number} idEsteira Identificador único para uma esteira.
  * @apiParam {Object} sensores Sensores para cadastrado.
  * 

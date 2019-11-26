@@ -1,9 +1,10 @@
 /**
- * @api {get} /Esteiras/ Devolve uma lista de esteiras cadastradas.
+ * @api {get} /Esteiras/ GetEsteiras
  * 
  * @apiName GetEsteiras
- * @apiGroup GetEsteiras
- * 
+ * @apiGroup Esteira
+ * @apiDescription Devolve uma lista de esteiras cadastradas.
+ *
  * @apiSuccess {Array} esteiras Devolve um array com todos os ids de esteira.
  * @apiSuccess {Array} aliases Devolve um array com todos os aliases das esteiras.
  * 

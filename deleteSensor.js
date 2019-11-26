@@ -1,8 +1,9 @@
 /**
- * @api {delete} /Esteiras/:idEsteira/Sensores/:idSensor Exclui um sensor de uma esteira em produção.
+ * @api {delete} /Esteiras/:idEsteira/Sensores/:idSensor DeleteSensor
  * 
  * @apiName DeleteSensor
- * @apiGroup DeleteSensor
+ * @apiGroup Sensor
+ * @apiDescription Exclui um sensor de uma esteira em produção.
  * 
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * @apiParam {Number} idSensor Identificador numérico único para um sensor.

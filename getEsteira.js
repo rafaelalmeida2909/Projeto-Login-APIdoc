@@ -1,8 +1,10 @@
  /**
- * @api {get} /Esteiras/:idEsteira Devolve informações a respeito de um esteira.
+ * @api {get} /Esteiras/:idEsteira GetEsteira
  * 
+ * @apiGroup Esteira
  * @apiName GetEsteira
- * @apiGroup GetEsteira
+ * 
+ * @apiDescription Devolve informações a respeito de um esteira.
  * 
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * 

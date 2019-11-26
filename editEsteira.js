@@ -1,9 +1,9 @@
 /**
- * @api {patch} /Esteiras/:idEsteira Modifica qualquer atributo de uma esteira, salvando as alterações no banco de dados.
- * 
+ * @api {patch} /Esteiras/:idEsteira EditEsteira
+ * @apiGroup Esteira
  * @apiName EditEsteira
- * @apiGroup EditEsteira
- * 
+ * @apiDescription Modifica qualquer atributo de uma esteira, salvando as alterações no banco de dados.
+ *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * @apiParam {Boolean} ativa True, se quero a esteira ativa, false, caso contrário.
  * @apiParam {Number} velocidade Um número (1, 2 ou 3) que define a velocidade da esteira.

@@ -1,9 +1,10 @@
  /**
- * @api {post} /Esteiras Cadastra uma esteira.
+ * @api {post} /Esteiras PostEsteira
  * 
  * @apiName PostEsteira
- * @apiGroup PostEsteira
- * 
+ * @apiGroup Esteira
+ * @apiDescription Cadastra uma esteira.
+ *
  * @apiParam {String} alias Nome amigável para esteira.
  * @apiParam {Boolean} ativa True, se a esteira está ativa, false, se for o contrário.
  * @apiParam {Number} velocidade Pode conter 1, 2 ou 3 reprentando velocidades crescentes para a esteira.

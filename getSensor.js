@@ -1,9 +1,10 @@
  /**
- * @api {get} /Esteiras/:idEsteira/Sensores/:idSensor Devolve informações a respeito de um sensor.
+ * @api {get} /Esteiras/:idEsteira/Sensores/:idSensor GetSensor
  * 
  * @apiName GetSensor
- * @apiGroup GetSensor
- * 
+ * @apiGroup Sensor
+ * @apiDescription Devolve informações a respeito de um sensor.
+ *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * @apiParam {Number} idSensor Identificador numérico único para uma sensor.
  * 

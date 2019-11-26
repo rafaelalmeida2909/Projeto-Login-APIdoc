@@ -1,9 +1,10 @@
 /**
- * @api {delete} /Esteiras/:idEsteira Exclui uma esteira em produção.
+ * @api {delete} /Esteiras/:idEsteira DeleteEsteira
  * 
  * @apiName DeleteEsteira
- * @apiGroup DeleteEsteira
- * 
+ * @apiGroup Esteira
+ * @apiDescription Exclui uma esteira em produção.
+ *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * 
  * @apiSuccess {String} mensagem Devolve um string com a mensagem de sucesso.
