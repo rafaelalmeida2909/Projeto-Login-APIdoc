@@ -4,15 +4,15 @@
  * @apiGroup Esteira
  * @apiName GetEsteira
  * 
- * @apiDescription Devolve informações a respeito de um esteira.
+ * @apiDescription Devolve informações, contidas na base de dados, a respeito de um esteira.
  * 
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * 
  * @apiSuccess {Number} idEsteira Identificador numérico único da uma esteira.
  * @apiSuccess {String} alias  Nome amigável da esteira.
- * @apiSuccess {Boolean} ativo True se a esteira está ativa, false, caso contrário.
+ * @apiSuccess {Boolean} ativa True se a esteira está ativa, false, caso contrário.
  * @apiSuccess {Number} velocidade Pode conter 1, 2 ou 3 reprentando velocidades crescentes para esteira.
- * @apiSuccess {Object} sensores Obejto com todos os sensores atribuídos a uma esteira e suas respectivas informações.
+ * @apiSuccess {Object} sensores Objeto com todos os sensores atribuídos a uma esteira e suas respectivas informações.
  *
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
  * HTTP/1.1 200 OK
@@ -23,8 +23,8 @@
  *		"velocidade": 3
  *		"sensores": {
  *			"10000": {
- *				"ativo": true,
- *				"qr": null,
+ *				"ativa": true,
+ *				"qr": undefined,
  *				"alias": "SensorDeTemperatura",
  *				"tipo": "térmico",
  *				"info": {
@@ -32,8 +32,8 @@
  *				}
  *		},
  *			"10001": {
- *				"ativo": true,
- * 				"qr": null,
+ *				"ativa": true,
+ * 				"qr": undefined,
  * 				"alias": "SensorDeUmidade",
  * 				"tipo": "umidade",
  * 				"info": {
@@ -41,8 +41,8 @@
  *				}
  *		},
  *			"10002": {
- *				"ativo": true,
- *				"qr": null,
+ *				"ativa": true,
+ *				"qr": undefined,
  *				"alias": "SensorÓptico",
  *				"tipo": "óptico",
  *				"info": {
@@ -52,12 +52,12 @@
  *			}
  *		}
  * }
- * @apiError ExcecaoEsteiraNaoExiste Não foi feito nenhum cadastro de esteira com o Id solicitado.
+ * @apiError EsteiraNaoExiste Não foi feito nenhum cadastro de esteira com o Id solicitado.
  *
  *
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *		"erro": "ExcecaoEsteiraNaoExiste"
+ *		"erro": "EsteiraNaoExiste"
  * }
  */

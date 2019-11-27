@@ -1,7 +1,8 @@
 /**
  * @api {patch} /Esteiras/:idEsteira PatchEsteira
- * @apiGroup Esteira
+ * 
  * @apiName PatchEsteira
+ * @apiGroup Esteira
  * @apiDescription Modifica qualquer atributo de uma esteira, salvando as alterações no banco de dados. Para que a modificação ocorra, deve ser enviado um JSON contendo o id da esteira a ser modificada e atributos com suas respectivas modificações.
  *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
@@ -17,26 +18,26 @@
  * {
  *		"idEsteira": 10007,
  *		"ativa": false,
- *		"velocidade": "undefined",
- *		"alias": "undefined"
+ *		"velocidade": undefined,
+ *		"alias": undefined
  * }
  * 
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
- *		"mensagem": "Estado da esteira atualizado",
+ *		"mensagem": "Esteira atualizada",
  *		"modificacoes": {
- *			"ativa": "true",
- *			"velocidade": "false",
- *			"alias": "false"
+ *			"ativa": true,
+ *			"velocidade": false,
+ *			"alias": false
  *		}
  * }
  *
- * @apiError MudançaFalhou A atualização da esteira falhou.
+ * @apiError AlteraçãoFalhou A atualização da esteira falhou.
  *
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *		"erro": "MudançaFalhou"
+ *		"erro": "AlteraçãoFalhou"
  * }
  */

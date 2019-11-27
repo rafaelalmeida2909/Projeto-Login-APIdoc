@@ -21,15 +21,15 @@
  *		"idSensor": 10004,
  *		"idEsteira": 10007,
  *		"ativa": false,
- *		"alias": "undefined",
- *		"qr": "undefined",
- *		"tipo": "undefined"
+ *		"alias": undefined,
+ *		"qr": undefined,
+ *		"tipo": undefined
  * }
  * 
  * @apiSuccessExample Exemplo de Sucesso:
  * HTTP/1.1 200 OK
  * {
- *		"mensagem": "Estado do sensor atualizado",
+ *		"mensagem": "Sensor atualizado",
  *		"modificacoes": {
  *			"idEsteira": true,
  *			"ativa": true,
@@ -39,11 +39,11 @@
  *		}
  * }
  *
- * @apiError MudançaFalhou A atualização do sensor falhou.
+ * @apiError AlteraçãoFalhou A atualização do sensor falhou.
  *
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *		"erro": "MudançaFalhou"
+ *		"erro": "AlteraçãoFalhou"
  * }
  */

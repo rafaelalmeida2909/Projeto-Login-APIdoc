@@ -3,10 +3,10 @@
  * 
  * @apiName PostSensor
  * @apiGroup Sensor
- * @apiDescription Cadastra um kit, ou apenas um único sensor em uma esteira.
+ * @apiDescription Cadastra um sensor, ou um kit de sensores na base de dados. Para isso deve ser enviado um JSON ao servidor indicando os atributos da nova esteira.
  *
  * @apiParam {Number} idEsteira Identificador único para uma esteira.
- * @apiParam {Object} sensores Sensores para cadastrado.
+ * @apiParam {Object} sensores Sensores para cadastro.
  * 
  * @apiSuccess {Object} sensores Objeto com os sensores que haviam na esteira, mais os adicionados.
  * 
@@ -16,22 +16,22 @@
  *		"idEsteira": 10001,
  *		"sensores": {
  *			"sensor1": {
- *				"ativo": false,
- *				"qr": null,
+ *				"ativa": false,
+ *				"qr": undefined,
  *				"alias": "SensorDeUmidade",
  *				"tipo": "umidade",
  *				"info": {
- *					"umidade": null
+ *					"umidade": undefined
  *				}
  *			},
  *			"sensor2": {
- *				"ativo": true,
- *				"qr": null,
+ *				"ativa": true,
+ *				"qr": undefined,
  *				"alias": "SensorÓptico",
  *				"tipo": "óptico",
  *				"info": {
- *					"distancia": null,
- *					"contagem": null
+ *					"distancia": undefined,
+ *					"contagem": undefined
  *				}
  *			}
  *		}
@@ -42,8 +42,8 @@
  * {
  *		"Sensores": {
  *			"10001": {
- *				"ativo": true,
- *				"qr": null,
+ *				"ativa": true,
+ *				"qr": undefined,
  *				"alias": "SensorDeTemperatura",
  *				"tipo": "térmico",
  *				"info": {
@@ -51,17 +51,17 @@
  *				}
  *			},
  *			"10002": {
- *				"ativo": false,
- *				"qr": null,
+ *				"ativa": false,
+ *				"qr": undefined,
  *				"alias": "SensorDeUmidade",
  *				"tipo": "umidade",
  *				"info": {
- *					"umidade": null
+ *					"umidade": undefined
  *				}
  *			},
  *			"10003": {
- *				"ativo": true,
- *				"qr": null,
+ *				"ativa": true,
+ *				"qr": undefined,
  *				"alias": "SensorÓptico",
  *				"tipo": "óptico",
  *				"info": {

@@ -3,12 +3,12 @@
  * 
  * @apiName GetSensor
  * @apiGroup Sensor
- * @apiDescription Devolve informações a respeito de um sensor.
+ * @apiDescription Devolve informações, contidas na base de dados, a respeito de um sensor.
  *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
  * @apiParam {Number} idSensor Identificador numérico único para uma sensor.
  * 
- * @apiSuccess {Bollean} ativo Retorna true se o sensor está ativo, e false, caso contrário.
+ * @apiSuccess {Bollean} ativa Retorna true se o sensor está ativo, e false, caso contrário.
  * @apiSuccess {String}  qr QR code do sensor. 
  * @apiSuccess {String} nome Nome do sensor
  * @apiSuccess {String} tipo Tipo de sensor.
@@ -18,8 +18,8 @@
  * HTTP/1.1 200 OK
  * {
  *		"idSensor": 10004,
- *		"ativo": true,
- *		"qr": null,
+ *		"ativa": true,
+ *		"qr": undefined,
  *		"alias": "SensorDeTemperatura",
  *		"tipo": "Térmico",
  *		"info": {
@@ -27,11 +27,11 @@
  *		}
  * }
  * 
- * @apiError ExcecaoSensorNaoEncontrado O sensor deste id não foi encontrado.
+ * @apiError SensorNaoEncontrado O sensor deste id não foi encontrado.
  * 
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *		"erro": "ExcecaoSensorNaoEncontrado"
+ *		"erro": "SensorNaoEncontrado"
  * }
  */

@@ -3,7 +3,7 @@
  * 
  * @apiName GetEsteiras
  * @apiGroup Esteira
- * @apiDescription Devolve uma lista de esteiras cadastradas.
+ * @apiDescription Devolve uma lista de esteiras cadastradas na base de dados.
  *
  * @apiSuccess {Array} esteiras Devolve um array com todos os ids de esteira.
  * @apiSuccess {Array} aliases Devolve um array com todos os aliases das esteiras.
@@ -15,11 +15,11 @@
  *		"aliases": ["EsteiraSetorNorte", "EsteiraEmpacotamento", "EsteiraMontagem"]
  * }
  *
- * @apiError ExcecaoNenhumaEsteiraCadastrada Nenhuma esteira foi encontrada.
+ * @apiError NenhumaEsteiraCadastrada Nenhuma esteira foi encontrada.
  *
  * @apiErrorExample Exemplo de Erro:
  * HTTP/1.1 404 Not Found
  * {
- *		"erro": "ExcecaoNenhumaEsteiraCadastrada"
+ *		"erro": "NenhumaEsteiraCadastrada"
  * }
  */
