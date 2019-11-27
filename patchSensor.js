@@ -3,11 +3,11 @@
  * 
  * @apiName PatchSensor
  * @apiGroup Sensor
- * @apiDescription Modifica qualquer atributo de um sensor, salvando as alterações no banco de dados.
+ * @apiDescription Modifica qualquer atributo de um sensor, salvando as alterações no banco de dados. Para que a modificação ocorra, deve ser enviado um JSON contendo o id do sensor a ser modificado e atributos com suas respectivas modificações.
  * 
  * @apiParam {Number} idEsteira Identificador numérico único para a esteira do sensor.
  * @apiParam {Number} idSensor Identificador numérico único para um sensor.
- * @apiParam {Boolean} ativa True, se quero o sensor ativo, false, caso contrário.
+ * @apiParam {Boolean} ativa True, se o sensor está ativo, false, se for o contrário.
  * @apiParam {String} alias Novo nome que se deseja dar a um sensor.
  * @apiParam {String} qr Novo QR-code de um sensor.
  * @apiParam {String} tipo Novo tipo do sensor utilizado.

@@ -2,10 +2,10 @@
  * @api {patch} /Esteiras/:idEsteira PatchEsteira
  * @apiGroup Esteira
  * @apiName PatchEsteira
- * @apiDescription Modifica qualquer atributo de uma esteira, salvando as alterações no banco de dados.
+ * @apiDescription Modifica qualquer atributo de uma esteira, salvando as alterações no banco de dados. Para que a modificação ocorra, deve ser enviado um JSON contendo o id da esteira a ser modificada e atributos com suas respectivas modificações.
  *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
- * @apiParam {Boolean} ativa True, se quero a esteira ativa, false, caso contrário.
+ * @apiParam {Boolean} ativa True, se a esteira está ativa, false, se for o contrário.
  * @apiParam {Number} velocidade Um número (1, 2 ou 3) que define a velocidade da esteira.
  * @apiParam {String} alias Novo nome que se deseja dar a esteira.
  * 

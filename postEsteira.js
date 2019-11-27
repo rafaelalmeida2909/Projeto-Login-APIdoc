@@ -3,7 +3,7 @@
  * 
  * @apiName PostEsteira
  * @apiGroup Esteira
- * @apiDescription Cadastra uma esteira.
+ * @apiDescription Cadastra uma esteira na base de dados, para isso deve ser enviado um JSON ao servidor indicando os atributos da nova esteira.
  *
  * @apiParam {String} alias Nome amigável para esteira.
  * @apiParam {Boolean} ativa True, se a esteira está ativa, false, se for o contrário.
