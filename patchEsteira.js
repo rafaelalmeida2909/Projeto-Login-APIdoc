@@ -17,8 +17,8 @@
  * {
  *		"idEsteira": 10007,
  *		"ativa": false,
- *		"velocidade": undefined,
- *		"alias": undefined
+ *		"velocidade": "undefined",
+ *		"alias": "undefined"
  * }
  * 
  * @apiSuccessExample Exemplo de Sucesso:
