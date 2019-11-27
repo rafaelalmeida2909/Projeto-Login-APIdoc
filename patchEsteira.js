@@ -1,7 +1,7 @@
 /**
- * @api {patch} /Esteiras/:idEsteira EditEsteira
+ * @api {patch} /Esteiras/:idEsteira PatchEsteira
  * @apiGroup Esteira
- * @apiName EditEsteira
+ * @apiName PatchEsteira
  * @apiDescription Modifica qualquer atributo de uma esteira, salvando as alterações no banco de dados.
  *
  * @apiParam {Number} idEsteira Identificador numérico único para uma esteira.
