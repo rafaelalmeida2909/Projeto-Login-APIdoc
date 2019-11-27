@@ -11,7 +11,7 @@
  * @apiSuccess {Number} idEsteira Identificador numérico único da uma esteira.
  * @apiSuccess {String} alias  Nome amigável da esteira.
  * @apiSuccess {Boolean} ativo True se a esteira está ativa, false, caso contrário.
- * @apiParam {Number} velocidade Pode conter 1, 2 ou 3 reprentando velocidades crescentes para esteira.
+ * @apiSuccess {Number} velocidade Pode conter 1, 2 ou 3 reprentando velocidades crescentes para esteira.
  * @apiSuccess {Object} sensores Obejto com todos os sensores atribuídos a uma esteira e suas respectivas informações.
  *
  * @apiSuccessExample {json} Exemplo de retorno de Successo:
@@ -52,7 +52,6 @@
  *			}
  *		}
  * }
- *
  * @apiError ExcecaoEsteiraNaoExiste Não foi feito nenhum cadastro de esteira com o Id solicitado.
  *
  *
