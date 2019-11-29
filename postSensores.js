@@ -17,21 +17,21 @@
  *		"sensores": {
  *			"sensor1": {
  *				"ativa": false,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorDeUmidade",
  *				"tipo": "umidade",
  *				"info": {
- *					"umidade": undefined
+ *					"umidade": null
  *				}
  *			},
  *			"sensor2": {
  *				"ativa": true,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorÓptico",
  *				"tipo": "óptico",
  *				"info": {
- *					"distancia": undefined,
- *					"contagem": undefined
+ *					"distancia": null,
+ *					"contagem": null
  *				}
  *			}
  *		}
@@ -43,7 +43,7 @@
  *		"Sensores": {
  *			"10001": {
  *				"ativa": true,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorDeTemperatura",
  *				"tipo": "térmico",
  *				"info": {
@@ -52,16 +52,16 @@
  *			},
  *			"10002": {
  *				"ativa": false,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorDeUmidade",
  *				"tipo": "umidade",
  *				"info": {
- *					"umidade": undefined
+ *					"umidade": null
  *				}
  *			},
  *			"10003": {
  *				"ativa": true,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorÓptico",
  *				"tipo": "óptico",
  *				"info": {

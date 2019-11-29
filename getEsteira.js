@@ -24,7 +24,7 @@
  *		"sensores": {
  *			"10000": {
  *				"ativa": true,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorDeTemperatura",
  *				"tipo": "térmico",
  *				"info": {
@@ -33,7 +33,7 @@
  *		},
  *			"10001": {
  *				"ativa": true,
- * 				"qr": undefined,
+ * 				"qr": null,
  * 				"alias": "SensorDeUmidade",
  * 				"tipo": "umidade",
  * 				"info": {
@@ -42,7 +42,7 @@
  *		},
  *			"10002": {
  *				"ativa": true,
- *				"qr": undefined,
+ *				"qr": null,
  *				"alias": "SensorÓptico",
  *				"tipo": "óptico",
  *				"info": {

@@ -19,7 +19,7 @@
  * {
  *		"idSensor": 10004,
  *		"ativa": true,
- *		"qr": undefined,
+ *		"qr": null,
  *		"alias": "SensorDeTemperatura",
  *		"tipo": "Térmico",
  *		"info": {

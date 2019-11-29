@@ -21,9 +21,9 @@
  *		"idSensor": 10004,
  *		"idEsteira": 10007,
  *		"ativa": false,
- *		"alias": undefined,
- *		"qr": undefined,
- *		"tipo": undefined
+ *		"alias": null,
+ *		"qr": null,
+ *		"tipo": null
  * }
  * 
  * @apiSuccessExample Exemplo de Sucesso:
