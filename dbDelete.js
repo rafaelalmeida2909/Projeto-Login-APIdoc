@@ -3,7 +3,7 @@
  * 
  * @apiName Remove
  * @apiGroup Banco de Dados
- * @apiDescription Método para busca de dados na base.
+ * @apiDescription Método para remover elemento(s) da base de dados.
  *
  * @apiParam {Object} json Objeto contendo características dos objetos que se almejam remover.
  * @apiParam {Object} err Objeto de erro gerado caso ocorra algum erro.
